@@ -15,18 +15,18 @@
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="mer-hybris/android_build" groups="pdk,tradefed" revision="hybris-12.1" >
+  <project path="build" name="mer-hybris/android_build" groups="pdk,tradefed" remote="github" revision="hybris-12.1" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <project path="hybris/hybris-boot" name="mer-hybris/hybris-boot" revision="master"/>
-  <project path="hybris/mer-kernel-check" name="mer-hybris/mer-kernel-check" revision="master" />
-  <project path="external/droidmedia" name="sailfishos/droidmedia" revision="master" />
-  <project path="external/audioflingerglue" name="mer-hybris/audioflingerglue" revision="master" />
+  <project path="hybris/hybris-boot" name="mer-hybris/hybris-boot" remote="github" revision="master"/>
+  <project path="hybris/mer-kernel-check" name="mer-hybris/mer-kernel-check" remote="github" revision="master" />
+  <project path="external/droidmedia" name="sailfishos/droidmedia" remote="github" revision="master" />
+  <project path="external/audioflingerglue" name="mer-hybris/audioflingerglue" remote="github" revision="master" />
 
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
 <!--  <project path="art" name="platform/art" groups="pdk" /> -->
-  <project path="bionic" name="mer-hybris/android_bionic" groups="pdk" revision="hybris-12.1" />
+  <project path="bionic" name="mer-hybris/android_bionic" groups="pdk" remote="github" revision="hybris-12.1" />
 <!--  <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" groups="pdk-cw-fs" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs" />
@@ -297,8 +297,8 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
 <!--  <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" /> -->
-  <project path="frameworks/av" name="mer-hybris/android_frameworks_av" groups="pdk" revision="hybris-12.1" />
-  <project path="frameworks/base" name="mer-hybris/android_frameworks_base" revision="hybris-12.1" />
+  <project path="frameworks/av" name="mer-hybris/android_frameworks_av" remote="github" groups="pdk" revision="hybris-12.1" />
+  <project path="frameworks/base" name="mer-hybris/android_frameworks_base" remote="github" revision="hybris-12.1" />
 <!--  <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -307,7 +307,7 @@
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs" />-->
-  <project path="frameworks/native" name="mer-hybris/android_frameworks_native" groups="pdk" revision="hybris-12.1" />
+  <project path="frameworks/native" name="mer-hybris/android_frameworks_native" remote="github" groups="pdk" revision="hybris-12.1" />
 <!--  <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" />
   <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs" />
@@ -351,7 +351,7 @@
   <project path="hardware/intel/img/psb_headers" name="platform/hardware/intel/img/psb_headers" groups="intel" />
   <project path="hardware/intel/img/psb_video" name="platform/hardware/intel/img/psb_video" groups="intel" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />-->
-  <project path="hardware/libhardware" name="mer-hybris/android_hardware_libhardware" groups="pdk" revision="hybris-12.1" />
+  <project path="hardware/libhardware" name="mer-hybris/android_hardware_libhardware" remote="github" groups="pdk" revision="hybris-12.1" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
   <project path="hardware/nvidia/audio" name="platform/hardware/nvidia/audio" groups="nvidia_audio" />
   <project path="hardware/nvidia/tegra124" name="platform/hardware/nvidia/tegra124" groups="tegra124" />
