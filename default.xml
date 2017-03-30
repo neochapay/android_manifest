@@ -5,15 +5,15 @@
            fetch="https://android.googlesource.com" />
 
   <remote  name="origin"
-           fetch="."
+           fetch="https://github.com/friendlyarm"
            revision="refs/heads/s5p4418-lollipop-mr1" />
+
+  <remote  name="github"
+           fetch="https://github.com" />
 
   <default revision="refs/tags/android-5.1.1_r6"
            remote="aosp"
            sync-j="4" />
-
- <remote  name="github"
-           fetch=".." />
 
   <project path="build" name="mer-hybris/android_build" groups="pdk,tradefed" revision="hybris-12.1" >
     <copyfile src="core/root.mk" dest="Makefile" />
